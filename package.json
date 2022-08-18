@@ -1,0 +1,11 @@
+{
+  "name": "rachida_hajjari_1_code_082022",
+  "version": "1.0.0",
+  "description": "Projet 3 - Dynamiser une page web avec des animations css",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "author": "chidoune",
+  "license": "ISC"
+}

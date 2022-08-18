@@ -1,0 +1,433 @@
+html, body {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: sticky;
+}
+html a, body a {
+  text-decoration: none;
+}
+
+/**************** HEADER **************/
+header {
+  text-align: center;
+}
+header img {
+  height: 40px;
+  margin: 30px 0 15px 0;
+}
+
+/********** FOOTER *********/
+.footer {
+  background-color: rgba(0, 0, 0, 0.7607843137);
+  padding: 15px 0 35px 25px;
+  color: white;
+  font-size: 20px;
+}
+@media screen and (min-width: 660px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 6%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .footer {
+    padding: 35px 8%;
+  }
+}
+.footer a {
+  color: white;
+}
+.footer__logo p {
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+  margin: 15px 0;
+}
+@media screen and (min-width: 660px) {
+  .footer__logo p {
+    text-align: center;
+  }
+}
+.footer__prop-resto {
+  display: flex;
+  align-items: baseline;
+}
+.footer__prop-resto .fa-utensils {
+  font-size: 17px;
+  margin-right: 13px;
+}
+.footer__prop-resto .fa-hands-helping {
+  font-size: 15px;
+  margin-right: 10px;
+}
+.footer__prop-resto p {
+  margin: 0 0 9px 0;
+}
+.footer__mention-contact__link {
+  margin-bottom: 9px;
+}
+
+.banner {
+  background-color: rgba(212, 205, 205, 0.5490196078);
+  color: rgba(8, 8, 8, 0.8235294118);
+  font-size: 19px;
+  font-weight: 600;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+}
+.banner i {
+  font-size: 20px;
+  margin-right: 12px;
+}
+.banner p {
+  margin-left: 12px;
+}
+
+.resa-menu {
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 40px 20px 52px 20px;
+}
+.resa-menu h1 {
+  margin: 0 0 15px 0;
+  font-size: 26px;
+  font-weight: bolder;
+  padding: 0 50px 0 50px;
+}
+.resa-menu p {
+  font-size: 22px;
+  color: #7e7e7e;
+}
+.resa-menu__btn {
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  height: 60px;
+  padding: 0 20px;
+  font-size: 20px;
+  box-shadow: 8px 8px 8px #ccc;
+  margin-top: 20px;
+}
+.resa-menu__btn:hover {
+  cursor: pointer;
+}
+
+.funct-container {
+  margin: 50px 0 45px 0;
+}
+.funct-container h2 {
+  padding-left: 25px;
+}
+@media screen and (min-width: 660px) {
+  .funct-container h2 {
+    margin-bottom: 50px;
+    padding-left: 5.5%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .funct-container h2 {
+    margin-bottom: 40px;
+    padding-left: 2.5%;
+  }
+}
+.funct-container__tuto {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 960px) {
+  .funct-container__tuto {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.funct-container__tuto__detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px 30px 8px;
+}
+@media screen and (min-width: 960px) {
+  .funct-container__tuto__detail {
+    margin-right: 15px;
+  }
+}
+.funct-container__tuto__detail__number {
+  position: relative;
+  left: 14px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+  height: 30px;
+  width: 40px;
+}
+@media screen and (min-width: 660px) and (max-width: 959px) {
+  .funct-container__tuto__detail__number {
+    width: 30px;
+  }
+}
+.funct-container__tuto__detail__number__position {
+  position: relative;
+  left: 9px;
+  top: -13px;
+}
+.funct-container__tuto__detail__icon-text {
+  display: flex;
+  align-items: center;
+  background-color: #F2F2F2;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 5px 5px 8px #ccc;
+  height: 80px;
+  width: 100%;
+  padding: 0 40px 0 40px;
+}
+.funct-container__tuto__detail__icon-text:hover {
+  background-color: rgba(246, 240, 255, 0.937254902);
+}
+.funct-container__tuto__detail__icon-text:hover i {
+  color: #9356DC;
+}
+.funct-container__tuto__detail__icon-text i {
+  font-size: 24px;
+  margin-right: 30px;
+  color: #7e7e7e;
+}
+@media screen and (min-width: 660px) and (max-width: 959px) {
+  .funct-container__tuto__detail__icon-text {
+    justify-content: center;
+    width: 60%;
+  }
+}
+
+.resto-container {
+  background-color: #F2F2F2;
+  width: 100%;
+}
+.resto-container h2 {
+  padding: 50px 0 0 25px;
+}
+@media screen and (min-width: 660px) {
+  .resto-container h2 {
+    padding-bottom: 18px;
+    padding-left: 5.5%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .resto-container h2 {
+    padding-bottom: 18px;
+    padding-left: 2.5%;
+  }
+}
+.resto-container__all-cards {
+  padding: 0 25px 50px 25px;
+}
+@media screen and (min-width: 960px) {
+  .resto-container__all-cards {
+    width: 100%;
+    display: flex;
+    padding: 0 0 50px 0;
+  }
+}
+@media screen and (min-width: 660px) and (max-width: 959px) {
+  .resto-container__all-cards__duo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  .resto-container__all-cards__duo a {
+    width: 44%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .resto-container__all-cards__duo {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .resto-container__all-cards__duo a {
+    width: 44%;
+  }
+}
+
+.resto-container__cards {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  box-shadow: 5px 5px 10px #ccc;
+  position: relative;
+  width: 100%;
+}
+@media screen and (min-width: 660px) {
+  .resto-container__cards {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+.resto-container__cards__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.resto-container__cards__new {
+  position: absolute;
+  right: 4%;
+  top: 2%;
+  background-color: #99E2D0;
+  color: green;
+  padding: 6px;
+  width: 100px;
+  text-align: center;
+}
+.resto-container__cards__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+}
+.resto-container__cards__content__name {
+  color: black;
+}
+.resto-container__cards__content__name h3 {
+  margin: 10px 0 5px 0;
+  font-size: 22px;
+}
+.resto-container__cards__content__name p {
+  margin: 0 0 15px 0;
+  font-size: 20px;
+}
+.resto-container__cards__content__heart {
+  font-size: 30px;
+  color: black;
+  transition: color 300ms;
+}
+.resto-container__cards__content__heart:hover {
+  color: #9356DC;
+}
+
+header {
+  position: relative;
+}
+header i {
+  color: rgba(8, 8, 8, 0.8235294118);
+  position: absolute;
+  left: 2%;
+  top: 37%;
+  font-size: 30px;
+  margin-left: 25px;
+}
+
+.background img {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.menu-container {
+  position: relative;
+  background-color: #f2f2f2;
+  border-radius: 60px 60px 0 0;
+  margin-top: -60px;
+  width: 100%;
+}
+.menu-container__name-resto {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 25px 25px 0 25px;
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+}
+.menu-container__name-resto h1 {
+  margin: 20px 0 0 0;
+}
+.menu-container__name-resto i {
+  font-size: 26px;
+  padding-right: 20px;
+}
+.menu-container__name-resto i:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 960px) {
+  .menu-container__menu-choice {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.menu-container__menu-choice__presentation h2 {
+  margin: 40px 0 0 25px;
+  color: #7e7e7e;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.menu-container__menu-choice__presentation .surlign-text {
+  border-bottom: 4px solid #99E2D0;
+}
+@media screen and (min-width: 960px) {
+  .menu-container__menu-choice__presentation {
+    width: 33%;
+  }
+}
+.menu-container__menu-choice__presentation__cards__alone {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 8px #ccc;
+  margin: 20px;
+  padding: 10px;
+}
+.menu-container__menu-choice__presentation__cards__alone:hover {
+  cursor: pointer;
+}
+.menu-container__menu-choice__presentation__cards__alone h3 {
+  margin: 0;
+  padding-right: 50px;
+}
+.menu-container__menu-choice__presentation__cards__alone__banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.menu-container__menu-choice__presentation__cards__alone__banner__subtitle p {
+  margin: 5px 0 0 0;
+}
+.menu-container__menu-choice__presentation__cards__alone__banner__price p {
+  font-weight: 600;
+  margin: 10px;
+}
+.menu-container__order {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding-bottom: 80px;
+}
+.menu-container__order__btn {
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  height: 60px;
+  padding: 0 20px;
+  font-size: 20px;
+  box-shadow: 8px 8px 8px #ccc;
+  width: 220px;
+}
+.menu-container__order__btn:hover {
+  cursor: pointer;
+}
+
+.footer {
+  position: relative;
+}
+
+/*# sourceMappingURL=style.css.map */
