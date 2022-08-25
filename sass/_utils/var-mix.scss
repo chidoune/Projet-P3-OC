@@ -1,19 +1,109 @@
 $primary-color : #9356DC;
 $secondary-color : #FF79DA;
 $tertiary-color : #99E2D0;
+$light-color: white;
+$dark-color: black;
+$shadow_color: #ccc;
+$background-card-color: #F2F2F2;
+$text-icon-color: #7e7e7e;
+$btn-violet-color: linear-gradient(352deg, $primary-color 0%, $secondary-color 100%);
+$font-family-title: 'Shrikhand', cursive;
 
+@mixin display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin box-shadow {
+  box-shadow: 6px 6px 15px $shadow_color;
+}
 
 @mixin button-violet {
-    background-color: $primary-color;
-    color: white;  
+    background: $btn-violet-color;
+    color: $light-color;  
     border-radius: 50px;
     border: none;
     height: 60px;
     padding: 0 20px;
     font-size: 20px;
-    box-shadow: 8px 8px 8px #ccc;
+    box-shadow: 8px 8px 8px $shadow-color;
     
       &:hover {
         cursor: pointer;
+        background: linear-gradient(352deg, lighten($primary-color,5%) 0%, lighten($secondary-color, 5%) 100%);
+        box-shadow: 8px 8px 8px darken($shadow-color,15);
       }
+}
+
+@mixin ball-anim {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+@mixin heart-gradient {
+  background: -webkit-linear-gradient($primary-color, $secondary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes heart {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes anim-loader {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform : translateX(10000px);
+  }
+}
+
+@keyframes anim-icon {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+/************** RESTOS PAGES ***************/
+
+@keyframes menu-moove {
+  from {
+    opacity: 0;
+    transform: translateY(1000px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes translate-ok {
+  from {
+    transform: translatex(100%);
+  }
+  to {
+    transform: translatex(0);
+  }
+}
+
+@keyframes rotation-ok {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+

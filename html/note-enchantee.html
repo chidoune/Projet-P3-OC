@@ -18,42 +18,48 @@
 
  <body>
 
-   <!------------- HEADER --------------->
+
   <header>
-    <a href="./home.html" alt="lien retour page home">
+    <a href="./home.html">
      <i class="fas fa-arrow-left"></i>
     </a>
     <img src="../images/ohfood.png" alt="logo ohfood">
   </header>
        
-  <!------------- PHOTO BACKGROUND --------------->
+
   <div class="background">
     <img src="../images/note-enchantee.jpg" alt="photo plat">
   </div>
 
-  <!----------- SECTION MENUS------------>
 
    <section class="menu-container">
       <div class="menu-container__name-resto">
          <h1> La note enchantée </h1>
          <i class="far fa-heart" aria-hidden="true"></i>
+         <i class="fas fa-heart"></i>
       </div>
 
       <div class="menu-container__menu-choice">
 
         <div class="menu-container__menu-choice__presentation">
           <h2><span class="surlign-text">ENTRÉ</span>ES</h2>
-          <div class="menu-container__menu-choice__presentation__cards">
+          <div class="menu-container__menu-choice__presentation__cards menu-container__menu-choice__presentation__cards--1">
 
             <div class="menu-container__menu-choice__presentation__cards__alone">
-              <h3>Ravioles</h3>
-              <div class="menu-container__menu-choice__presentation__cards__alone__banner">
-                <div class="menu-container__menu-choice__presentation__cards__alone__banner__subtitle">
+              <div class="menu-container__menu-choice__presentation__cards__alone__all">
+               <h3>Ravioles</h3>
+               <div class="menu-container__menu-choice__presentation__cards__alone__all__banner">
+                <div class="menu-container__menu-choice__presentation__cards__alone__all__banner__subtitle">
                   <p>Accompagnées de leur crème à la truffe</p>
-                </div>
-                <div class="menu-container__menu-choice__presentation__cards__alone__banner__price">
-                  <p>25€</p>
-                </div>
+                  </div>
+                  <div class="menu-container__menu-choice__presentation__cards__alone__all__banner__price">
+                   <p>25€</p>
+                  </div>
+               </div>
+              </div>
+            
+              <div class="menu-container__menu-choice__presentation__cards__alone__ok">
+                <i class="fas fa-check-circle menu-container__menu-choice__presentation__cards__alone__ok__icon"></i>
               </div>
             </div>
 
@@ -98,7 +104,7 @@
 
         <div class="menu-container__menu-choice__presentation">
           <h2><span class="surlign-text">PLAT</span>S</h2>
-          <div class="menu-container__menu-choice__presentation__cards">
+          <div class="menu-container__menu-choice__presentation__cards menu-container__menu-choice__presentation__cards--2">
 
             <div class="menu-container__menu-choice__presentation__cards__alone">
               <h3>Noix de coquilles Saint-Jacques</h3>
@@ -140,10 +146,10 @@
 
         <div class="menu-container__menu-choice__presentation">
           <h2><span class="surlign-text">DESS</span>ERTS</h2>
-          <div class="menu-container__menu-choice__presentation__cards">
+          <div class="menu-container__menu-choice__presentation__cards menu-container__menu-choice__presentation__cards--3">
 
             <div class="menu-container__menu-choice__presentation__cards__alone">
-              <h3>Macaron noisette et chocolats</h3>
+              <h3>Macaron noisette et chocolat</h3>
               <div class="menu-container__menu-choice__presentation__cards__alone__banner">
                 <div class="menu-container__menu-choice__presentation__cards__alone__banner__subtitle">
                   <p>Glace au caramel brun et sel de Guérande</p>
@@ -183,14 +189,11 @@
       </div>
 
       <div class="menu-container__order">
-        <a href="#" alt="lien commander">
-         <button class="menu-container__order__btn">Commander</button>
-       </a>
+         <button type="button" class="menu-container__order__btn">Commander</button>
       </div>
 
    </section>
 
-  <!----------- FOOTER------------>
 
   <footer class="footer">
     <div class="footer__logo">
@@ -200,19 +203,19 @@
     <div class="footer__prop">
       
       <div class="footer__prop-resto">
-        <a href="#" alt="proposer un resto">
+        <a href="#">
          <i class="fas fa-utensils" aria-hidden="true"></i> 
         </a>
-        <a href="#" alt="proposer un resto">
+        <a href="#">
          <p>Proposer un restaurant</p>
         </a>
       </div>
 
       <div class="footer__prop-resto">
-        <a href="#" alt="devenir partenaire">
+        <a href="#">
          <i class="fas fa-hands-helping" aria-hidden="true"></i>
         </a>
-        <a href="#" alt="devenir partenaire">
+        <a href="#">
          <p>Devenir partenaire</p>
         </a>
       </div>  
@@ -220,11 +223,11 @@
       
     <div class="footer__mention-contact">
       <div class="footer__mention-contact__link">
-      <a href="#" alt="mentions légales"> Mentions légales</a>
+      <a href="#"> Mentions légales</a>
      </div>
 
      <div class="footer__mention-contact__link" >
-      <a href="mailto:" alt="contact par mail">Contact</a>
+      <a href="mailto:">Contact</a>
     </div>
     </div>
   </footer>

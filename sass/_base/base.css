@@ -1,0 +1,13 @@
+html, body {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  position: relative;
+}
+html a, body a {
+  text-decoration: none;
+}/*# sourceMappingURL=base.css.map */

@@ -13,30 +13,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <title>Projet 3 : Site Ohfood -- Home</title>
+    <title>Projet 3 : Site Ohfood -- Accueil</title>
   </head>
 
  <body>
 
-   <!------------- HEADER --------------->
+  <div class="loader-container">
+    <div class="loader-container__anim">
+     <div class="loader-container__anim__text">
+      <p>Bienvenue !</p> <p>Merci de patienter . . .</p> 
+     </div>
+     <div class="loader-container__anim__ball">
+      <div class="loader-container__anim__ball--1"></div>
+      <div class="loader-container__anim__ball--2"></div>
+      <div class="loader-container__anim__ball--3"></div>
+     </div>
+    </div>
+  </div>
+
+ 
    <header>
      <img src="../images/ohfood.png" alt="logo ohfood">
    </header>
         
-   <!------------- BANNIERE --------------->
+
     <div class="banner">
       <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
       <p> Paris, Belleville</p>
     </div>
         
-   <!-------- SECTION RESERVATION ---------->
+   
     <section class="resa-menu">
       <h1>Réservez le menu qui vous convient</h1>
       <p>Découvez des restaurants d'exception, selectionnés par nos soins.</p>
-      <a href="#resto-ancre" alt=""><button class="resa-menu__btn">Explorer nos restaurants</button></a>
+      <button type="button" class="resa-menu__btn">Explorer nos restaurants</button>
     </section>
         
-   <!------------- SECTION FONCTIONNEMENT --------->
+
     <section class="funct-container">
       <h2>Fonctionnement</h2>
       <div class="funct-container__tuto">
@@ -74,13 +87,13 @@
     </div>
     </section>
         
-   <!------- SECTION RESTAURANTS------->
+
     <section id="resto-ancre" class="resto-container">
       <h2>Restaurants</h2>
       <div class="resto-container__all-cards">
         
        <div class="resto-container__all-cards__duo">
-        <a href="./palette-gout.html" alt="lien-resto palette du goût">
+        <a href="./palette-gout.html">
         <div class="resto-container__cards">
           <div>
             <img class="resto-container__cards__img" src="../images/palette-gout.jpg" alt="photo resto La palette du goût">
@@ -92,16 +105,17 @@
               <p>Ménilmontant</p>
             </div>
             <div class="resto-container__cards__content__heart"> 
-              <i class="far fa-heart" aria-hidden="true"></i>
+             <i class="far fa-heart" aria-hidden="true"></i>
+             <i class="fas fa-heart"></i>
             </div>
           </div>
         </div> 
         </a>
         
-        <a href="./note-enchantee.html" alt="lien-resto la note enchantée">
+        <a href="./note-enchantee.html">
         <div class="resto-container__cards">
           <div>
-            <img class="resto-container__cards__img" src="../images/palette-gout.jpg" alt="photo resto La note enchantée">
+            <img class="resto-container__cards__img" src="../images/note-enchantee.jpg" alt="photo resto La note enchantée">
             <p class="resto-container__cards__new">Nouveau</p>
           </div>
           <div class="resto-container__cards__content">
@@ -110,7 +124,8 @@
               <p>Charonne</p>
             </div>
             <div class="resto-container__cards__content__heart">
-              <i class="far fa-heart" aria-hidden="true"></i>
+             <i class="far fa-heart" aria-hidden="true"></i>
+             <i class="fas fa-heart"></i>
             </div>
           </div>
         </div>
@@ -118,7 +133,7 @@
        </div>
         
        <div class="resto-container__all-cards__duo">
-        <a href="./a-francaise.html" alt="lien resto à la française">
+        <a href="./a-francaise.html">
         <div class="resto-container__cards">
           <div>
             <img class="resto-container__cards__img" src="../images/afrancaise.jpg" alt="photo resto A la française">
@@ -129,13 +144,14 @@
               <p>Cité Rouge</p>
             </div>
             <div class="resto-container__cards__content__heart">
-              <i class="far fa-heart" aria-hidden="true"></i>
+             <i class="far fa-heart" aria-hidden="true"></i>
+             <i class="fas fa-heart"></i>
             </div>
           </div>
         </div>
         </a>
         
-        <a href="./delice-sens.html" alt="lien-resto délice des sens">
+        <a href="./delice-sens.html">
         <div class="resto-container__cards">
           <div>
             <img class="resto-container__cards__img" src="../images/delice-sens.jpg" alt="photo resto Le délice des sens">
@@ -146,7 +162,8 @@
                 <p>Folie-Méricourt</p>
               </div>
               <div class="resto-container__cards__content__heart">
-                <i class="far fa-heart" aria-hidden="true"></i>
+               <i class="far fa-heart" aria-hidden="true"></i>
+               <i class="fas fa-heart"></i>
               </div>
           </div>
         </div>
@@ -156,7 +173,7 @@
       </div>
     </section>
         
-   <!------------ FOOTER ------------->
+
     <footer class="footer">
       <div class="footer__logo">
        <p>ohfood</p>
@@ -165,19 +182,19 @@
       <div class="footer__prop">
         
         <div class="footer__prop-resto">
-          <a href="#" alt="proposer un resto">
+          <a href="#">
            <i class="fas fa-utensils" aria-hidden="true"></i> 
           </a>
-          <a href="#" alt="proposer un resto">
+          <a href="#">
            <p>Proposer un restaurant</p>
           </a>
         </div>
 
         <div class="footer__prop-resto">
-          <a href="#" alt="devenir partenaire">
+          <a href="#">
            <i class="fas fa-hands-helping" aria-hidden="true"></i>
           </a>
-          <a href="#" alt="devenir partenaire">
+          <a href="#">
            <p>Devenir partenaire</p>
           </a>
         </div>  
@@ -185,11 +202,11 @@
         
       <div class="footer__mention-contact">
         <div class="footer__mention-contact__link">
-        <a href="#" alt="mentions légales"> Mentions légales</a>
+        <a href="#"> Mentions légales</a>
        </div>
 
        <div class="footer__mention-contact__link" >
-        <a href="mailto:" alt="contact par mail">Contact</a>
+        <a href="mailto:">Contact</a>
       </div>
       </div>
     </footer>

@@ -1,0 +1,59 @@
+/**************** HEADER **************/
+header {
+  text-align: center;
+}
+header img {
+  height: 40px;
+  margin: 30px 0 15px 0;
+}
+
+/********** FOOTER *********/
+.footer {
+  background-color: rgba(0, 0, 0, 0.7607843137);
+  padding: 15px 0 35px 25px;
+  color: white;
+  font-size: 20px;
+}
+@media screen and (min-width: 660px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 6%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .footer {
+    padding: 35px 8%;
+  }
+}
+.footer a {
+  color: white;
+}
+.footer__logo p {
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+  margin: 15px 0;
+}
+@media screen and (min-width: 660px) {
+  .footer__logo p {
+    text-align: center;
+  }
+}
+.footer__prop-resto {
+  display: flex;
+  align-items: baseline;
+}
+.footer__prop-resto .fa-utensils {
+  font-size: 17px;
+  margin-right: 13px;
+}
+.footer__prop-resto .fa-hands-helping {
+  font-size: 15px;
+  margin-right: 10px;
+}
+.footer__prop-resto p {
+  margin: 0 0 9px 0;
+}
+.footer__mention-contact__link {
+  margin-bottom: 9px;
+}/*# sourceMappingURL=header-footer.css.map */

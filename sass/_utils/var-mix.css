@@ -1,0 +1,68 @@
+@-webkit-keyframes heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes anim-loader {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10000px);
+  }
+}
+@keyframes anim-loader {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10000px);
+  }
+}
+@-webkit-keyframes anim-icon {
+  from {
+    transform: translateX(0) rotate(0) scale(0.8);
+  }
+  to {
+    transform: translateX(10px) rotate(90deg) scale(1.6);
+  }
+}
+@keyframes anim-icon {
+  from {
+    transform: translateX(0) rotate(0) scale(0.8);
+  }
+  to {
+    transform: translateX(10px) rotate(90deg) scale(1.6);
+  }
+}
+@-webkit-keyframes menu-moove {
+  from {
+    opacity: 0;
+    transform: translateY(1000px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes menu-moove {
+  from {
+    opacity: 0;
+    transform: translateY(1000px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=var-mix.css.map */
