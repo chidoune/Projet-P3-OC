@@ -88,22 +88,3 @@ $font-family-title: 'Shrikhand', cursive;
   }
 }
 
-@keyframes translate-ok {
-  from {
-    transform: translatex(100%);
-  }
-  to {
-    transform: translatex(0);
-  }
-}
-
-@keyframes rotation-ok {
-  from {
-    transform: rotate(90deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
