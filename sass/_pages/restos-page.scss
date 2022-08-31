@@ -139,7 +139,7 @@ header {
             }
         }
 
-        @media screen and (max-width:515px) {
+        @media screen and (max-width:535px) {
             &:active &__all h3 {
               @include ellipsis;
               width: 203px;
