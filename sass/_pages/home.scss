@@ -1,6 +1,6 @@
 .loader-container {
     position: fixed;
-    top:0;
+    top: 0;
     bottom: 0;
     right: 0;
     left: 0;
@@ -8,7 +8,7 @@
     z-index: 1000;
     opacity: 0.95;
     @include display-center;
-    animation: anim-loader 10ms 3s forwards;
+    animation: anim-loader 0ms 3000ms forwards;
 
     &__anim {
         @include display-center;

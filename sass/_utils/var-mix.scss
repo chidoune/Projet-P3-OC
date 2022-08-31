@@ -49,13 +49,10 @@ $font-family-title: 'Shrikhand', cursive;
   -webkit-text-fill-color: transparent;
 }
 
-@keyframes heart {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+@mixin ellipsis {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
 }
 
 @keyframes anim-loader {
