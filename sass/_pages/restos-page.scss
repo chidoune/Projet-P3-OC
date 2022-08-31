@@ -116,7 +116,6 @@ header {
         overflow: hidden;
 
         @media screen and (min-width:1140px) {
-
             &:hover &__all h3 {
               @include ellipsis;
               width: 205px;
@@ -126,9 +125,9 @@ header {
               @include ellipsis;
               width: 205px;
             }
-      
+  
             &:hover &__all__banner__price p {
-                transform: translateX(-65px);
+              transform: translateX(-65px);
             }
     
             &:hover &__ok {
@@ -140,8 +139,7 @@ header {
             }
         }
 
-        @media screen and (max-width:1139px) {
-
+        @media screen and (max-width:515px) {
             &:active &__all h3 {
               @include ellipsis;
               width: 203px;
@@ -151,16 +149,18 @@ header {
               @include ellipsis;
               width: 203px;
             }
-               
+        }
+          
+        @media screen and (max-width:1139px) {   
             &:active &__all__banner__price p {
-                transform: translateX(-65px);
+              transform: translateX(-65px);
             }
     
             &:active &__ok {
               transform: translateX(0);
     
               &__icon {
-                transform: rotate(360deg);
+              transform: rotate(360deg);
               }
             }
         }
