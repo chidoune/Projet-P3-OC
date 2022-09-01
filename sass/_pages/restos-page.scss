@@ -37,6 +37,10 @@ header {
 
     h1 {
       margin: 20px 0 0 0;
+
+      @media screen and (max-width:659px) {
+        font-size: 25px;
+      }
     }
 
     .far {
@@ -53,10 +57,15 @@ header {
       font-size: 26px;
       display: block;
       right: 45px;
-      top: 53px;
+      bottom: 7px;
       opacity: 0;
       transition: opacity 300ms;
       cursor: pointer;
+
+      @media screen and (min-width: 660px) {
+        bottom: 10px;
+      }
+
       &:hover {
 
         @media screen and (min-width: 1140px) {
@@ -115,6 +124,18 @@ header {
         cursor: pointer;
         overflow: hidden;
 
+        &:hover &__all__banner__price p {
+          transform: translateX(-65px);
+        }
+
+        &:hover &__ok {
+          transform: translateX(0);
+
+          &__icon {
+            transform: rotate(360deg);
+          }
+        }
+
         @media screen and (min-width:1140px) {
             &:hover &__all h3 {
               @include ellipsis;
@@ -125,45 +146,19 @@ header {
               @include ellipsis;
               width: 205px;
             }
-  
-            &:hover &__all__banner__price p {
-              transform: translateX(-65px);
-            }
-    
-            &:hover &__ok {
-              transform: translateX(0);
-    
-              &__icon {
-                transform: rotate(360deg);
-              }
-            }
         }
 
         @media screen and (max-width:535px) {
-            &:active &__all h3 {
+            &:hover &__all h3 {
               @include ellipsis;
               width: 203px;
             }
     
-            &:active &__all__banner__subtitle p {
+            &:hover &__all__banner__subtitle p {
               @include ellipsis;
               width: 203px;
             }
-        }
-          
-        @media screen and (max-width:1139px) {   
-            &:active &__all__banner__price p {
-              transform: translateX(-65px);
-            }
-    
-            &:active &__ok {
-              transform: translateX(0);
-    
-              &__icon {
-              transform: rotate(360deg);
-              }
-            }
-        }
+        }    
 
         &__all {
           width: 100%;
