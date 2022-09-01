@@ -39,7 +39,7 @@ header {
       margin: 20px 0 0 0;
 
       @media screen and (max-width:659px) {
-        font-size: 25px;
+        font-size: 24px;
       }
     }
 
@@ -57,13 +57,13 @@ header {
       font-size: 26px;
       display: block;
       right: 45px;
-      bottom: 7px;
+      top: 48px;
       opacity: 0;
       transition: opacity 300ms;
       cursor: pointer;
 
       @media screen and (min-width: 660px) {
-        bottom: 10px;
+        top: 53px;
       }
 
       &:hover {
